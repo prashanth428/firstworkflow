@@ -1,0 +1,13 @@
+# This is the first workflow file
+
+name: first workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+      steps:
+        - name: Print Greeting
+          run: echo "Hellow World"
+        - name: Print Goodbye
+          run: echo "done-goodbye"
+          
