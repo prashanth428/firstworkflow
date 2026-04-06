@@ -28,6 +28,7 @@ jobs:
           echo "test, and deploy your project"
           echo {{ $RUNNER_OS }}
   show_result:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
