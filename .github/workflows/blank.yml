@@ -34,8 +34,9 @@ jobs:
       - name: Run the second job
         run: echo "This is the 2nd Job"
   build+showresult:
-    needs: build
-    needs: show_result
+    needs:
+      - build
+      - show_result
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
